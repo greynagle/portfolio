@@ -1,8 +1,12 @@
 *{
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     list-style: none;
+}
+
+.headshot {
+    object-fit: contain;
 }
 
 .contacts {
@@ -27,6 +31,14 @@ footer.fixed{
 
 .menubar {
     padding:2%;
+}
+
+.copy {
+    margin-top:0px;
+}
+
+.fas, .fab {
+    color:black;
 }
 
 @media only screen and (max-width: 600px){    
@@ -58,21 +70,24 @@ footer.fixed{
         width:100%;
     }
 
-    .home{
-        background-color: gray;
-        height:200px;
+    /* .home{
+        
+    } */
+
+    .headshot {
+        width: 80%;
     }
     
-    .bio{
+    /* .bio{
         background-color: gray;
         height:200px;
-    }
+    } */
     
-    .projects{
+    /* .projects{
         background-color: gainsboro;
         width:100%;
         height:200px;
-    }
+    } */
 
     .contacts {
         width:100%;
@@ -103,6 +118,8 @@ footer.fixed{
         header>p{
             font-size: 3.0em;
             font-weight: bolder;
+            padding-bottom: 25px;
+            margin:25px;
         }
         
         .menubar{
@@ -122,6 +139,16 @@ footer.fixed{
             flex-direction: column;
             justify-content: space-evenly;
         }
+
+        ul.menu>li {
+            width:85px;
+        }
+
+        ul.menu>li:hover{
+            text-decoration:underline;
+            color: rgb(11, 11, 73);
+            cursor: pointer;
+        }
     
         .hidden-m{
             display: none;
@@ -129,7 +156,7 @@ footer.fixed{
         
         main{
             margin-top: 125px;
-            margin-left: 220px;
+            margin-left: 205px;
         }
     
         main>section {
@@ -138,15 +165,21 @@ footer.fixed{
             width:100%;
         }
     
-        .home{
+        /* .home{
             background-color: gray;
             height:400px;
+        } */
+
+        .headshot {
+            height: 350px;
         }
         
         .bio{
-            background-color: gray;
-            height:400px;
-        }
+            width:60vw;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }        
         
         .projects{
             background-color: gainsboro;
@@ -157,6 +190,7 @@ footer.fixed{
         .contacts {
             width:100%;
             font-size: 1.5em;
+            color:black;
             display:flex;
             justify-content: space-around;
         }
@@ -166,7 +200,7 @@ footer.fixed{
         }
     
         footer{
-            height:75px;
+            height:80px;
             padding-top:10px;
         }
         
