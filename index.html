@@ -19,35 +19,54 @@
             <i class="fas fa-bars hidden-m"></i>
             <span class="js-section section"></span>
             <ul class="menu hidden-s">
-                <li>HOME</li>
-                <li>BIO</li>
-                <li>PROJECTS</li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#bio">BIO</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="home">
-            <h2 class="js-home">
+            <h2 id="home">
                 Hi! I'm Grey Nagle
             </h2>
             <img src="images/382px-Insert-Photo-Here.jpg" alt="Placeholder Photo" class="headshot"> 
         </section>
         <section>
-            <p class="js-bio bio">
-                Puzzles and problem-solving are major interests of mine, and I love how well coding feeds those interests. Coming from an 
-                engineering background, I've grown to deeply appreciate coding's potential for rapid development cycles. 
+            <p id="bio" class="bio">
+                Puzzles and problem-solving are major interests of mine, and I love how well coding 
+                feeds those interests. Coming from an engineering background, I've grown to deeply 
+                appreciate coding's potential for rapid development cycles. 
             </p>
-            <p class="js-bio bio">
-                In my downtime, I enjoy winemaking, travelling the world, and cooking meals from the places I visit.
+            <p class="bio">
+                In my downtime I enjoy winemaking, traveling the world, and cooking meals from the places I visit.
             </p>
         </section>
-        <section class="projects">
+        <section id="projects" class="projects">
             <h3>
                 Here are some projects I've worked on:
             </h3>
-            <ul>
+            <ul class="project-list">
                 <li>
-
+                    <h4>Quiz App</h4>
+                    <nav>
+                        <ul class="project-links">
+                            <li>
+                                <a href="https://greynagle.github.io/quiz-app/">Live Link</a>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <a href="https://github.com/greynagle/quiz-app">Github</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <br>
+                    <img src="images/quiz.PNG" alt="Quiz app screenshot" class="project-img">
+                    <p class="bio">
+                        A small demo program written in HTML/CSS/JavaScript with JQuery. This app poses 
+                        the player several questions about the early history of the United States and displays 
+                        further information after each question, tallying the score at the end.
+                    </p>
                 </li>
             </ul>
         </section>
