@@ -12,18 +12,33 @@ body {
 
 main{
     color: #aaccff;
+    margin-top: 125px;
+    margin-bottom: 75px;
+}
+
+main>section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:100%;
 }
 
 .headshot {
     object-fit: contain;
+    width: 305px;
 }
 
 .project-img {
     object-fit: contain;
+    width: 80vw;
+    padding:0px;
 }
 
 .contacts {
     display: inline-block;
+    width:100%;
+    font-size: 1.5em;
+    display:flex;
+    justify-content: space-around;
 }
 
 .fixed {
@@ -44,10 +59,16 @@ footer.fixed{
 
 .menubar {
     padding:2%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height:35px;
+    background-color: #2b2233;
 }
 
 .copy {
     margin-top:0px;
+    font-size: .5em;
 }
 
 .fas, .fab {
@@ -75,111 +96,80 @@ ul.menu a{
     color: #aaffdd;
 }
 
-@media only screen and (min-width: 320px){    
-    header>p{
-        font-size: 1.5em;
-        font-weight: bolder;
-    }
+header>p{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
 
-    i.fa-bars{
-        color: #aaffdd;
-    }
+
+i.fa-bars{
+    color: #aaffdd;
+}
+
+ul.menu {
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+ul.menu>li {
+    display: block;
+}
+
+ul.hidden-s{
+    display: none;
+}
+
+.project-list {
+    padding-left: 0%;
+}
+
+footer{
+    height:75px;
+    padding-top:10px;
+}
+
+footer>div{
+    padding:3px;
+}
+
+/* small tablet */
+@media only screen and (min-width: 480px){
     
-    .menubar{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height:35px;
-        background-color: #2b2233;
-    }
-
-    ul.menu {
-        display:flex;
-        justify-content: space-evenly;
-        width:100%;
-    }
-
-    ul.menu>li {
-        display: block;
-    }
-
-   
-
-    ul.hidden-s{
-        display: none;
-    }
-    
-    main{
-        margin-top: 125px;
-        margin-bottom: 75px;
-    }
-
-    main>section {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width:100%;
-    }
-
-    /* .home{
-        
-    } */
-
-    .headshot {
-        width: 80%;
-    }
-
     .project-img {
-        width: 80%;
-        padding:0px;
+        width: 326px;
     }
 
-    .project-list {
-        padding-left: 0%;
-    }
-    
-    /* .bio{
-        background-color: gray;
-        height:200px;
-    } */
-    
-    /* .projects{
-        background-color: gainsboro;
-        width:100%;
-        height:200px;
-    } */
-
-    .contacts {
-        width:100%;
-        font-size: 1.5em;
-        display:flex;
-        justify-content: space-around;
+    p.bio{
+        margin-left:auto;
+        margin-right:auto;
+        width:464px;
     }
 
-    .copy{
-        font-size: .5em;
-    }
-
-    footer{
-        height:75px;
-        padding-top:10px;
-    }
-    
-    footer>div{
-        padding:3px;
+    nav.contacts{
+        width:480px;
+        margin-left:auto;
+        margin-right:auto;
     }
 }
 
-@media only screen and (min-width: 600px){
+/* tablets + */
+@media only screen and (min-width: 780px){  
     header{
         height:100px;
     }
     
     header>p{
         font-size: 3.0em;
-        font-weight: bolder;
         padding-bottom: 25px;
         margin:25px;
     }
+    
+    main {
+        margin-top: 125px;
+        margin-left: 205px;
+    }
+   
     
     .menubar{
         background-color: #2b2233;
@@ -215,22 +205,6 @@ ul.menu a{
     .hidden-m{
         display: none;
     }
-    
-    main{
-        margin-top: 125px;
-        margin-left: 205px;
-    }
-
-    main>section {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width:100%;
-    }
-
-    /* .home{
-        background-color: gray;
-        height:400px;
-    } */
 
     .headshot {
         height: 350px;
@@ -273,9 +247,5 @@ ul.menu a{
     footer{
         height:80px;
         padding-top:10px;
-    }
-    
-    footer>div{
-        padding:3px;
     }
 }
